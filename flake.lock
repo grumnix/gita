@@ -1,0 +1,61 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1653893745,
+        "narHash": "sha256-0jntwV3Z8//YwuOjzhV2sgJJPt+HY6KhU7VZUL0fKZQ=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "1ed9fb1935d260de5fe1c2f7ee0ebaae17ed2fa1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "gita-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643516170,
+        "narHash": "sha256-16QYhpQljn1NbiLZ9qk2V9TE6S54Ca2iLvitOzaL8vI=",
+        "owner": "nosarthur",
+        "repo": "gita",
+        "rev": "4842ae155543728a6c522c321de5c88f659a18d5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nosarthur",
+        "ref": "v0.16.2",
+        "repo": "gita",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1654005557,
+        "narHash": "sha256-J6elwUzPoco+r5qWPHhvS2EHVWomUtNcxzkfdAQOwEU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "08950a6e29cf7bddee466592eb790a417550f7f9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-22.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "gita-src": "gita-src",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
