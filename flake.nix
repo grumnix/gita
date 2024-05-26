@@ -2,7 +2,7 @@
   description = "A command-line tool to manage multiple git repos";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
+    nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-24.05";
     flake-utils.url = "github:numtide/flake-utils";
 
     gita-src.url = "github:nosarthur/gita?ref=v0.16.3";
