@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-24.05";
     flake-utils.url = "github:numtide/flake-utils";
 
-    gita-src.url = "github:nosarthur/gita?ref=v0.16.3";
+    gita-src.url = "github:nosarthur/gita?ref=v0.16.6.1";
     gita-src.flake = false;
   };
 

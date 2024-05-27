@@ -21,16 +21,16 @@
     "gita-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1682821337,
-        "narHash": "sha256-wIVXK/u1f5dD4IoHRT+Pn4ltcU6gJ/XJm9bgQv2xeUM=",
+        "lastModified": 1689646822,
+        "narHash": "sha256-kPyk13yd4rc63Nh73opuHsCTj4DgYAVfro8To96tteA=",
         "owner": "nosarthur",
         "repo": "gita",
-        "rev": "619926e68c769133bdc5b5bae7c0aa65782a4c50",
+        "rev": "54671cc1913973c4078cb77161327fbe127dce70",
         "type": "github"
       },
       "original": {
         "owner": "nosarthur",
-        "ref": "v0.16.3",
+        "ref": "v0.16.6.1",
         "repo": "gita",
         "type": "github"
       }
