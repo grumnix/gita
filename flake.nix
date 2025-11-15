@@ -43,17 +43,18 @@
               installShellCompletion --zsh --name gita ${src}/.gita-completion.zsh
             '';
 
-            propagatedBuildInputs = with pkgs; [
-              python3Packages.pyyaml
-              python3Packages.setuptools
+            nativeCheckInputs = with pkgs; [
+              git
+              python3Packages.pytest
             ];
 
             nativeBuildInputs = with pkgs; [
               installShellFiles
+            ];
 
-              # FIXME: should be checkInputs
-              git
-              python3Packages.pytest
+            propagatedBuildInputs = with pkgs; [
+              python3Packages.pyyaml
+              python3Packages.setuptools
             ];
 
             meta = with pkgs.lib; {
