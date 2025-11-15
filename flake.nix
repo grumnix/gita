@@ -2,7 +2,7 @@
   description = "A command-line tool to manage multiple git repos";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-24.05";
+    nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
 
     gita-src.url = "github:nosarthur/gita?ref=v0.16.6.1";
@@ -17,11 +17,14 @@
         packages = rec {
           default = gita;
 
-          gita = pkgs.python39Packages.buildPythonPackage rec {
+          gita = pkgs.python3Packages.buildPythonPackage rec {
             pname = "gita";
             version = "0.16.3";
 
             src = gita-src;
+
+            pyproject = true;
+            build-system = [ pkgs.python3Packages.setuptools ];
 
             postUnpack = ''
               substituteInPlace source/tests/test_main.py \
@@ -41,8 +44,8 @@
             '';
 
             propagatedBuildInputs = with pkgs; [
-              python39Packages.pyyaml
-              python39Packages.setuptools
+              python3Packages.pyyaml
+              python3Packages.setuptools
             ];
 
             nativeBuildInputs = with pkgs; [
@@ -50,7 +53,7 @@
 
               # FIXME: should be checkInputs
               git
-              python39Packages.pytest
+              python3Packages.pytest
             ];
 
             meta = with pkgs.lib; {
