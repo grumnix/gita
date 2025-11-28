@@ -18,30 +18,30 @@
         "type": "github"
       }
     },
-    "gita-src": {
+    "gita_src": {
       "flake": false,
       "locked": {
-        "lastModified": 1689646822,
-        "narHash": "sha256-kPyk13yd4rc63Nh73opuHsCTj4DgYAVfro8To96tteA=",
+        "lastModified": 1763358723,
+        "narHash": "sha256-JzfGj17YCYXmpGV2jSsGLsG1oqO5ynj7r3u/mkSBRBg=",
         "owner": "nosarthur",
         "repo": "gita",
-        "rev": "54671cc1913973c4078cb77161327fbe127dce70",
+        "rev": "756dbd2f7448510bd33f3a9b0f3881f61ee65cf6",
         "type": "github"
       },
       "original": {
         "owner": "nosarthur",
-        "ref": "v0.16.6.1",
+        "ref": "v0.16.8.2",
         "repo": "gita",
         "type": "github"
       }
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1762977756,
-        "narHash": "sha256-4PqRErxfe+2toFJFgcRKZ0UI9NSIOJa+7RXVtBhy4KE=",
+        "lastModified": 1764242076,
+        "narHash": "sha256-sKoIWfnijJ0+9e4wRvIgm/HgE27bzwQxcEmo2J/gNpI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c5ae371f1a6a7fd27823bc500d9390b38c05fa55",
+        "rev": "2fad6eac6077f03fe109c4d4eb171cf96791faa4",
         "type": "github"
       },
       "original": {
@@ -54,7 +54,7 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "gita-src": "gita-src",
+        "gita_src": "gita_src",
         "nixpkgs": "nixpkgs"
       }
     },
